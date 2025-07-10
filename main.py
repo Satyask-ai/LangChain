@@ -19,7 +19,7 @@ llm = ChatOpenAI(temperature=0.7, model="gpt-4o-mini")
 chain = prompt | llm
 
 #Run the chain 
-response = chain.invoke({"topic":"Artificial Intelligence"})
+response = chain.invoke({"topic":"who is trump?"})
 
 #Print the response
 print("\nResponse from the LLM:\n", response.content)
